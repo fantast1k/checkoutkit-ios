@@ -100,7 +100,7 @@ public class CardValidator {
         var even = false
         let n = sanitizeEntry(number, isNumber: true)
         var array = Array(n.characters)
-        for var i = (array.count - 1) ; i >= 0 ; i-- {
+        for var i = (array.count - 1) ; i >= 0 ; i -= 1 {
             nDigit = Int(String(array[i]))
             if nDigit == nil {
                 return false
